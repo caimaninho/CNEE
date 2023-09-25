@@ -1,0 +1,11 @@
+function Arredondar(A, round)
+    [m,n] = size(A);
+    for i=1:m
+        for j=1:n
+            % str = sprintf(['%0.', num2str(round), 'f'], A(i,j));
+            % disp(str);
+            fprintf(['%0.', num2str(round), 'f '], A(i,j));
+        end
+        fprintf('\n');
+    end
+end
