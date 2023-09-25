@@ -9,7 +9,7 @@ function [A, det, Pivot] = Decomposicao_LU(n, A)
     for j=1:n-1
         %Escolha do elemento pivô.
         p = j;
-        Amax = abs(A(i,j));
+        Amax = abs(A(j,j));
         for k=j+1:n
             if abs(A(k,j))>Amax
                 Amax = abs(A(k,j));
